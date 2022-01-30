@@ -22,6 +22,7 @@ theme_heat <- function(base_size = 11, base_family = "", base_line_size = base_s
           legend.text = element_text(angle = 90, vjust = 0, hjust = 0, color = "#aa381e"),
           legend.title = element_text(vjust = 1, color = "#aa381e"),
           axis.title.y = element_blank(),
+          panel.grid = element_blank(),
           plot.background = element_rect(fill = "linen"),
           plot.title = element_text(size = 18, vjust = 1, hjust = 0, color = "#aa381e", face = "bold",
                                     margin=margin(10,0,10,0)))

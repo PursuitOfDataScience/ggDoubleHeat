@@ -19,6 +19,15 @@
 #' @export
 #'
 #' @examples
+#' # A simple heatcircle
+#' data <- data.frame(x = rep(c("a", "b", "c"), 3),
+#'                    y = rep(c("d", "e", "f"), 3),
+#'                    outside = rep(c(1,5,7),3),
+#'                    inside = rep(c(2,3,4),3))
+#' ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside, inside = inside)
+#'
+
+
 geom_heat_circle <- function(outside,
                              outside_name = rlang::expr({{ outside }}),
                              outside_colors = c("#FED7D8","#FE8C91", "#F5636B", "#E72D3F","#C20824"),

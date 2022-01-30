@@ -5,7 +5,15 @@
 \alias{pitts_tg}
 \title{The 30-week Pittsburgh Covid related incidence rates from Google searches and Tweets}
 \format{
-
+A data frame with 270 rows and 6 columns:
+\describe{
+  \item{msa}{Metropolitan statistical area (Pittsburgh only)}
+  \item{week}{week 1 to week 30}
+  \item{week_start}{The Monday date of the week started}
+  \item{category}{9 Covid-related categories in total}
+  \item{Twitter}{weekly tweets percentage in the MSA falling into each category}
+  \item{Google}{weekly Google search percentage in the MSA falling into each category}
+}
 }
 \source{
 Google is processed from Google Health API, and Twitter
