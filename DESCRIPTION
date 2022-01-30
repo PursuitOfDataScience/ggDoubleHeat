@@ -1,0 +1,15 @@
+Package: ggDoubleHeat
+Type: Package
+Title: Visualize two data sources by using reformed heat maps
+Version: 0.1.0
+Author: Youzhi Yu
+Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
+Description: An extension of the ggplot2 package
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends:
+    grid,
+    ggplot2,
+    ggnewscale
+RoxygenNote: 7.1.2
