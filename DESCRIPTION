@@ -9,7 +9,10 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Depends:
-    grid,
-    ggplot2,
-    ggnewscale
+    R (>= 3.3)
+Imports:
+    rlang,
+    ggplot2 (>= 3.0.0),
+    ggnewscale (>= 0.4.5)
 RoxygenNote: 7.1.2
+

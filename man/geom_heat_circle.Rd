@@ -6,10 +6,10 @@
 \usage{
 geom_heat_circle(
   outside,
-  outside_name = "outside",
+  outside_name = rlang::expr({     {         outside     } }),
   outside_colors = c("#FED7D8", "#FE8C91", "#F5636B", "#E72D3F", "#C20824"),
   inside,
-  inside_name = "inside",
+  inside_name = rlang::expr({     {         inside     } }),
   inside_colors = c("gray100", "gray85", "gray50", "gray35", "gray0"),
   r = 3,
   ...
@@ -19,14 +19,14 @@ geom_heat_circle(
 \item{outside}{The column name for the outside portion of heatcircle.}
 
 \item{outside_name}{The label name (in quotes) for the legend of the outside rendering. Default
-is "outside".}
+is the column name for the outside.}
 
 \item{outside_colors}{A color vector, usually as hexcodes.}
 
 \item{inside}{The column name for the inside portion of heatcircle.}
 
 \item{inside_name}{The label name (in quotes) for the legend of the inside rendering. Default
-is "outside".}
+is the column name for the inside.}
 
 \item{inside_colors}{A color vector, usually as hexcodes.}
 

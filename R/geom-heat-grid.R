@@ -2,28 +2,34 @@
 #'
 #' @param outside The column name for the outside portion of heatgrid.
 #' @param outside_name The label name (in quotes) for the legend of the outside rendering. Default
-#' is "outside".
+#' is the column name for the outside.
 #' @param outside_colors A color vector, usually as hexcodes.
 #' @param inside The column name for the inside portion of heatgrid.
 #' @param inside_name The label name (in quotes) for the legend of the inside rendering. Default
-#' is "outside".
+#' is the column name for the inside.
 #' @param inside_colors A color vector, usually as hexcodes.
 #' @param r The value that controls how large of the inside portion with respect to the outside one.
 #' When r is larger, the inside get smaller. Default value is 3.
 #' @param ...
 #'
+#' @import ggplot2
+#' @import grid
+#' @import rlang
 #' @return geom_heat_grid
 #' @export
 #'
 #' @examples
 geom_heat_grid <- function(outside,
-                           outside_name = "outside",
+                           outside_name = rlang::expr({{ outside }}),
                            outside_colors = c("#FED7D8","#FE8C91", "#F5636B", "#E72D3F","#C20824"),
                            inside,
-                           inside_name = "inside",
+                           inside_name = rlang::expr({{ inside }}),
                            inside_colors = c('gray100', 'gray85', 'gray50', 'gray35', 'gray0'),
                            r = 3,
                            ...){
+
+  if(r <= 2){rlang::abort(message = "`r` has to be greater than 2.")}
+
   list(geom_tile_outside(aes(fill = {{ outside }})),
        scale_fill_gradientn(outside_name, colors = outside_colors, ...),
        new_scale("fill"),
@@ -38,8 +44,8 @@ geom_heat_grid <- function(outside,
 #' @format NULL
 #' @usage NULL
 #' @export
-GeomRectCenter <- ggproto("GeomRectCenter", Geom,
-                    default_aes = aes(color = "black", fill = NA, size = 0.5, linetype = 1,
+GeomRectCenter <- ggplot2::ggproto("GeomRectCenter", ggplot2::Geom,
+                    default_aes = ggplot2::aes(color = "black", fill = NA, size = 0.5, linetype = 1,
                                       alpha = NA),
 
 
@@ -64,14 +70,14 @@ GeomRectCenter <- ggproto("GeomRectCenter", Geom,
                       )
                     },
 
-                    draw_key = draw_key_rect
+                    draw_key = ggplot2::draw_key_rect
 )
 
 
 #' @format NULL
 #' @usage NULL
 #' @export
-GeomTileOutside <- ggproto("GeomTileOutside", GeomRectCenter,
+GeomTileOutside <- ggplot2::ggproto("GeomTileOutside", GeomRectCenter,
                      extra_params = c("na.rm"),
 
 
@@ -85,13 +91,13 @@ GeomTileOutside <- ggproto("GeomTileOutside", GeomRectCenter,
                        )
                      },
 
-                     default_aes = aes(fill = "grey20", colour = NA, size = 0.1, linetype = 1,
+                     default_aes = ggplot2::aes(fill = "grey20", colour = NA, size = 0.1, linetype = 1,
                                        alpha = NA, width = NA, height = NA),
 
                      required_aes = c("x", "y"),
                      non_missing_aes = c("xmin", "xmax", "ymin", "ymax"),
 
-                     draw_key = draw_key_rect
+                     draw_key = ggplot2::draw_key_rect
 )
 
 
@@ -123,7 +129,7 @@ geom_tile_outside <- function(mapping = NULL, data = NULL,
 #' @format NULL
 #' @usage NULL
 #' @export
-GeomTileInside <- ggproto("GeomTileInside", GeomTileOutside,
+GeomTileInside <- ggplot2::ggproto("GeomTileInside", GeomTileOutside,
 
                           setup_data = function(data, params) {
                             data$width <- data$width %||% params$width %||% resolution(data$x, FALSE)

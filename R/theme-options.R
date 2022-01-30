@@ -1,0 +1,29 @@
+#' Plot Themes
+#'
+#' @param base_size base font size
+#' @param base_family base font family
+#' @param base_line_size base size for line elements
+#' @param base_rect_size base size for rect elements
+#'
+#' @export
+
+theme_heat <- function(base_size = 11, base_family = "", base_line_size = base_size/22,
+                       base_rect_size = base_size/22) {
+
+  theme_bw(base_size = base_size, base_family = base_family,
+           base_line_size = base_line_size, base_rect_size = base_rect_size) %+replace%
+
+
+    theme(legend.position = "bottom",
+          axis.ticks = element_blank(),
+          axis.title = element_text(size = 13, color = "#aa381e", face = "bold"),
+          axis.text = element_text(size = 11, color = "#aa381e"),
+          axis.text.y = element_text(face = "bold"),
+          legend.text = element_text(angle = 90, vjust = 0, hjust = 0, color = "#aa381e"),
+          legend.title = element_text(vjust = 1, color = "#aa381e"),
+          axis.title.y = element_blank(),
+          plot.background = element_rect(fill = "linen"),
+          plot.title = element_text(size = 18, vjust = 1, hjust = 0, color = "#aa381e", face = "bold",
+                                    margin=margin(10,0,10,0)))
+
+}
