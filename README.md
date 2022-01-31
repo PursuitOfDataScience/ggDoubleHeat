@@ -92,6 +92,6 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 Note: It is a tad time consuming to run the code above due to emojis.
-Also, `pitts_tg` is the emoji metadata built in `ggDoubleHeat`. Another
-thing worth noting is that there are some grids that do not have emoji,
-and the reason is there is no emoji in the Twitter sample file.
+Also, `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`.
+Another thing worth noting is that there are some grids that do not have
+emoji, and the reason is there is no emoji in the Twitter sample file.

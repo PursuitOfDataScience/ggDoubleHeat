@@ -90,7 +90,7 @@ GeomOneCircle <- ggplot2::ggproto("GeomOneCircle", ggplot2::Geom,
                            )
                          },
 
-                         draw_key = ggplot2::draw_key_dotplot
+                         draw_key = ggplot2::draw_key_rect
 )
 
 
@@ -116,7 +116,7 @@ GeomCircleOutside <- ggplot2::ggproto("GeomCircleOutside", GeomOneCircle,
                        required_aes = c("x", "y"),
                        non_missing_aes = c("xmin", "xmax", "ymin", "ymax"),
 
-                       draw_key = ggplot2::draw_key_dotplot
+                       draw_key = ggplot2::draw_key_rect
 )
 
 
