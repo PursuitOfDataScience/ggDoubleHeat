@@ -8,10 +8,6 @@ regular heat map, which can be made by using `ggplot2::geom_tile()`,
 contains three dimensions (variables). `geom_heat_*()`, however, can
 express four dimensions of data on a single plot.
 
-A key component of `ggDoubleHeat` uses `ggnewscale`. If you are
-interested in learning it, check out its Github page (here is the
-[link](https://github.com/eliocamp/ggnewscale)).
-
 ## Installation
 
 You can install the released version of `ggDoubleHeat` from the
@@ -33,7 +29,6 @@ the basic usage of the package.
 ``` r
 library(ggDoubleHeat)
 library(ggplot2)
-library(ggnewscale)
 pitts_tg
 ```
 

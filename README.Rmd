@@ -11,8 +11,6 @@ knitr::opts_chunk$set(echo = TRUE,
 
 The `ggDoubleHeat` package is a `ggplot2` extension that provides visualization for data from two different sources on a modified heat map. All functions from the package are named as `geom_heat_*()`. A regular heat map, which can be made by using `ggplot2::geom_tile()`, contains three dimensions (variables). `geom_heat_*()`, however, can express four dimensions of data on a single plot. 
 
-A key component of `ggDoubleHeat` uses `ggnewscale`. If you are interested in learning it, check out its Github page (here is the [link](https://github.com/eliocamp/ggnewscale)).
-
 
 ## Installation
 
@@ -32,7 +30,6 @@ For demostration purposes, the built-in dataset `pitts_tg` to illustrate the bas
 ```{r}
 library(ggDoubleHeat)
 library(ggplot2)
-library(ggnewscale)
 pitts_tg
 ```
 

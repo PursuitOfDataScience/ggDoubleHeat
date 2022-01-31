@@ -49,11 +49,15 @@ geom_heat_grid <- function(outside,
 
   if(is.null(inside_name)) {inside_name = rlang::expr({{ inside }})}
 
-  list(geom_tile_outside(aes(fill = {{ outside }})),
-       scale_fill_gradientn(outside_name, colors = outside_colors, ...),
-       new_scale("fill"),
-       geom_tile_inside(aes(fill = {{ inside }}, r = r)),
-       scale_fill_gradientn(inside_name, colors = inside_colors, ...))
+  list(geom_tile_outside(ggplot2::aes(fill = {{ outside }})),
+
+       ggplot2::scale_fill_gradientn(outside_name, colors = outside_colors, ...),
+
+       ggnewscale::new_scale_fill(),
+
+       geom_tile_inside(ggplot2::aes(fill = {{ inside }}, r = r)),
+
+       ggplot2::scale_fill_gradientn(inside_name, colors = inside_colors, ...))
 
 }
 
