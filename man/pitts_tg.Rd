@@ -3,16 +3,16 @@
 \docType{data}
 \name{pitts_tg}
 \alias{pitts_tg}
-\title{The 30-week Pittsburgh Covid related incidence rates from Google searches and Tweets}
+\title{Pittsburgh Covid related Google & Twitter incidence rates}
 \format{
 A data frame with 270 rows and 6 columns:
 \describe{
-  \item{msa}{Metropolitan statistical area (Pittsburgh only)}
-  \item{week}{week 1 to week 30}
-  \item{week_start}{The Monday date of the week started}
-  \item{category}{9 Covid-related categories in total}
-  \item{Twitter}{weekly tweets percentage in the MSA falling into each category}
-  \item{Google}{weekly Google search percentage in the MSA falling into each category}
+  \item{msa}{Metropolitan statistical area (Pittsburgh only).}
+  \item{week}{week 1 to week 30.}
+  \item{week_start}{The Monday date of the week started.}
+  \item{category}{9 Covid-related categories in total.}
+  \item{Twitter}{weekly tweets percentage in the MSA falling into each category.}
+  \item{Google}{weekly Google search percentage in the MSA falling into each category.}
 }
 }
 \source{
@@ -23,9 +23,9 @@ from Meltwater, a Twitter vendor.
 pitts_tg
 }
 \description{
-A dataset containing the incidence rates of Covid related categories
-incidence rates from week 1 starting from June 1 2020 to week 30
+A dataset containing the 30-week incidence rates of Covid related categories
+from week 1 starting from June 1, 2020 to week 30
 that ended in the last Sunday of the year in Pittsburgh Metropolitan
-Statistical Area (MSA). The data columns are as follows:
+Statistical Area (MSA). The data columns are introduced below.
 }
 \keyword{datasets}

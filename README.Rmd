@@ -1,0 +1,59 @@
+---
+title: "ggDoubleHeat"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE,
+                      message = FALSE)
+```
+
+The `ggDoubleHeat` package is a `ggplot2` extension that provides visualization for data from two different sources on a modified heat map. All functions from the package are named as `geom_heat_*()`. A regular heat map, which can be made by using `ggplot2::geom_tile()`, contains three dimensions (variables). `geom_heat_*()`, however, can express four dimensions of data on a single plot. 
+
+A key component of `ggDoubleHeat` uses `ggnewscale`. If you are interested in learning it, check out its Github page (here is the [link](https://github.com/eliocamp/ggnewscale)).
+
+
+## Installation
+
+You can install the released version of `ggDoubleHeat` from the development version with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
+```
+
+## Usage
+
+Here in this section, two functions `geom_heat_grid()` and `geom_heat_circle()` are illustrated.
+
+For demostration purposes, the built-in dataset `pitts_tg` to illustrate the basic usage of the package.
+
+```{r}
+library(ggDoubleHeat)
+library(ggplot2)
+library(ggnewscale)
+pitts_tg
+```
+
+`pitts_tg` is a dataset that collects the 30-week period of Covid-related Google & Twitter incidence rate for 9 different categories from the Pittsburgh Metropolitan Statistical Area (MSA). For the complete information of the dataset, please type `?pitts_tg` on the console. 
+
+`geom_heat_grid()`:
+
+```{r}
+ggplot(data = pitts_tg, aes(x = week, y = category)) +
+  geom_heat_grid(outside = Google, inside = Twitter) +
+  ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
+```
+
+Now changing `geom_heat_grid()` to `geom_heat_circle()`,
+
+```{r}
+ggplot(data = pitts_tg, aes(x = week, y = category)) +
+  geom_heat_circle(outside = Google, inside = Twitter) +
+  ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
+  
+```
+
+
+

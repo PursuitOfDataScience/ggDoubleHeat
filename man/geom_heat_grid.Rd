@@ -6,10 +6,10 @@
 \usage{
 geom_heat_grid(
   outside,
-  outside_name = rlang::expr({     {         outside     } }),
+  outside_name = NULL,
   outside_colors = c("#FED7D8", "#FE8C91", "#F5636B", "#E72D3F", "#C20824"),
   inside,
-  inside_name = rlang::expr({     {         inside     } }),
+  inside_name = NULL,
   inside_colors = c("gray100", "gray85", "gray50", "gray35", "gray0"),
   r = 3,
   ...
@@ -19,14 +19,14 @@ geom_heat_grid(
 \item{outside}{The column name for the outside portion of heatgrid.}
 
 \item{outside_name}{The label name (in quotes) for the legend of the outside rendering. Default
-is the column name for the outside.}
+is NULL.}
 
 \item{outside_colors}{A color vector, usually as hexcodes.}
 
 \item{inside}{The column name for the inside portion of heatgrid.}
 
 \item{inside_name}{The label name (in quotes) for the legend of the inside rendering. Default
-is the column name for the inside.}
+is NULL.}
 
 \item{inside_colors}{A color vector, usually as hexcodes.}
 
@@ -39,5 +39,19 @@ When r is larger, the inside get smaller. Default value is 3.}
 geom_heat_grid
 }
 \description{
-Heatgrid
+The heatgrid geom is used to create a modified heat map that uses luminance to
+show the values from two sources on the same plot.
+}
+\examples{
+
+# A simple heatgrid
+
+data <- data.frame(x = rep(c("a", "b", "c"), 3),
+                   y = rep(c("d", "e", "f"), 3),
+                   outside_values = rep(c(1,5,7),3),
+                   inside_values = rep(c(2,3,4),3))
+
+ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
+                                        inside = inside_values)
+
 }
