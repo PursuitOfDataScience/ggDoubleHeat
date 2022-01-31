@@ -67,8 +67,6 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
   # rendering emojis using "richtext"
   annotate("richtext", x = rep(c(1:30), 9), y = rep(1:9, each = 30), 
            label = pitts_emojis, label.color = NA, fill = NA, size = 0.3) +
-  # adjust the aspect ratio for better visualization
-  theme(aspect.ratio = 9/31) +
   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
