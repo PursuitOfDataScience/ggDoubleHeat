@@ -17,6 +17,7 @@
 #' @import ggplot2
 #' @import grid
 #' @import rlang
+#' @import ggnewscale
 #' @return geom_heat_grid
 #' @export
 #'

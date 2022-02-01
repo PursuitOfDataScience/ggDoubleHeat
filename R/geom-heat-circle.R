@@ -17,6 +17,8 @@
 #' @import ggplot2
 #' @import grid
 #' @import rlang
+#' @import ggnewscale
+
 #' @return geom_heat_circle
 #' @export
 #'
@@ -55,7 +57,7 @@ geom_heat_circle <- function(outside,
 
        ggnewscale::new_scale_fill(),
 
-       geom_circle_inside(aes(fill = {{ inside }}, r = r)),
+       geom_circle_inside(ggplot2::aes(fill = {{ inside }}, r = r)),
 
        ggplot2::scale_fill_gradientn(inside_name, colors = inside_colors, ...))
 
