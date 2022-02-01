@@ -22,7 +22,7 @@
 #'
 #' @examples
 #'
-#' # A simple heatcircle
+#' # A simple heattriangle
 #'
 #' data <- data.frame(x = rep(c("a", "b", "c"), 3),
 #'                   y = rep(c("d", "e", "f"), 3),
