@@ -59,7 +59,10 @@ geom_heat_tri <- function(lower,
 
 
 
-
+#' @format NULL
+#' @usage NULL
+#' @export
+#'
 GeomTriLowerBase <- ggplot2::ggproto("GeomTriLowerBase", Geom,
                             default_aes = ggplot2::aes(color = NA, fill = "grey30", size = 0.5, linetype = 1,
                                               alpha = NA),
@@ -89,6 +92,11 @@ GeomTriLowerBase <- ggplot2::ggproto("GeomTriLowerBase", Geom,
                             draw_key = ggplot2::draw_key_rect
 )
 
+#' @format NULL
+#' @usage NULL
+#' @export
+#'
+
 
 GeomTriUpperBase <- ggplot2::ggproto("GeomTriUpperBase", GeomTriLowerBase,
 
@@ -111,6 +119,9 @@ GeomTriUpperBase <- ggplot2::ggproto("GeomTriUpperBase", GeomTriLowerBase,
 )
 
 
+#' @format NULL
+#' @usage NULL
+#' @export
 
 
 GeomLowerTri <- ggplot2::ggproto("GeomLowerTri", GeomTriLowerBase,
@@ -145,6 +156,10 @@ GeomLowerTri <- ggplot2::ggproto("GeomLowerTri", GeomTriLowerBase,
 )
 
 
+#' @format NULL
+#' @usage NULL
+#' @export
+
 
 geom_lower_tri <- function(mapping = NULL, data = NULL,
                            stat = "identity", position = "identity",
@@ -167,6 +182,11 @@ geom_lower_tri <- function(mapping = NULL, data = NULL,
     )
   )
 }
+
+
+#' @format NULL
+#' @usage NULL
+#' @export
 
 
 GeomUpperTri <- ggplot2::ggproto("GeomUpperTri", GeomTriUpperBase,
@@ -199,6 +219,11 @@ GeomUpperTri <- ggplot2::ggproto("GeomUpperTri", GeomTriUpperBase,
 
                         draw_key = ggplot2::draw_key_rect
 )
+
+
+#' @format NULL
+#' @usage NULL
+#' @export
 
 
 
