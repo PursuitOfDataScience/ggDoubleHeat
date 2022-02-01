@@ -33,10 +33,10 @@ is NULL.}
 \item{r}{The value that controls how large of the inside portion with respect to the outside one.
 When r is larger, the inside get smaller. Default value is 3.}
 
-\item{...}{}
+\item{...}{... accepts any arguments scale_fill_gradientn() has.}
 }
 \value{
-geom_heat_circle
+A heatcircle (modified heatmap) with nested circles.
 }
 \description{
 The heatcircle geom is used to create the two concentric circles that use luminance to
@@ -44,10 +44,31 @@ show the values from two sources on the same plot.
 }
 \examples{
 
-# A simple heatcircle
+# heatcircle with categorical variables only
 
 data <- data.frame(x = rep(c("a", "b", "c"), 3),
                    y = rep(c("d", "e", "f"), 3),
+                   outside_values = rep(c(1,5,7),3),
+                   inside_values = rep(c(2,3,4),3))
+
+ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
+                                          inside = inside_values)
+
+# heatcircle with numeric variables only
+
+data <- data.frame(x = rep(c(1, 2, 3), 3),
+                   y = rep(c(1, 2, 3), 3),
+                   outside_values = rep(c(1,5,7),3),
+                   inside_values = rep(c(2,3,4),3))
+
+ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
+                                          inside = inside_values)
+
+
+# heatcircle with a mixure of numeric and categorical variables
+
+data <- data.frame(x = rep(c("a", "b", "c"), 3),
+                   y = rep(c(1, 2, 3), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 

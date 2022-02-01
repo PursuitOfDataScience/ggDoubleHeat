@@ -29,10 +29,10 @@ is NULL.}
 
 \item{upper_colors}{A color vector, usually as hexcodes.}
 
-\item{...}{...}
+\item{...}{... accepts any arguments scale_fill_gradientn() has.}
 }
 \value{
-geom_heat_tri
+A heattriangle (modified heatmap) with two triangles on each single unit.
 }
 \description{
 The heattriangle geom is used to create the two triangles split by a diagonal line of a rectangle
@@ -40,7 +40,7 @@ that use luminance to show the values from two sources on the same plot.
 }
 \examples{
 
-# A simple heattriangle
+# heattriangle with categorical variables only
 
 data <- data.frame(x = rep(c("a", "b", "c"), 3),
                   y = rep(c("d", "e", "f"), 3),
@@ -48,5 +48,28 @@ data <- data.frame(x = rep(c("a", "b", "c"), 3),
                   upper_values = rep(c(2,3,4),3))
 
 ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
-                                      upper = upper_values)
+                                       upper = upper_values)
+
+# heatcircle with numeric variables only
+
+data <- data.frame(x = rep(c(1, 2, 3), 3),
+                   y = rep(c(1, 2, 3), 3),
+                   lower_values = rep(c(1,5,7),3),
+                   upper_values = rep(c(2,3,4),3))
+
+ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
+                                       upper = upper_values)
+
+
+# heatcircle with a mixure of numeric and categorical variables
+
+data <- data.frame(x = rep(c("a", "b", "c"), 3),
+                   y = rep(c(1, 2, 3), 3),
+                   lower_values = rep(c(1,5,7),3),
+                   upper_values = rep(c(2,3,4),3))
+
+ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
+                                       upper = upper_values)
+
+
 }
