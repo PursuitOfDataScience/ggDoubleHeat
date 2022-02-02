@@ -1,23 +1,26 @@
 #' Heattriangle
 #'
-#' The heattriangle geom is used to create the two triangles split by a diagonal line of a rectangle
-#' that use luminance to show the values from two sources on the same plot.
+#' The heattriangle geom is used to create the two triangles split by a diagonal
+#' line of a rectangle that use luminance to show the values from two sources on
+#' the same plot.
 #'
 #' @param lower The column name for the lower portion of heattriangle.
-#' @param lower_name The label name (in quotes) for the legend of the lower rendering. Default
-#' is NULL.
+#' @param lower_name The label name (in quotes) for the legend of the lower
+#' rendering. Default is \code{NULL}.
 #' @param lower_colors A color vector, usually as hexcodes.
 #' @param upper The column name for the upper portion of heattriangle.
-#' @param upper_name The label name (in quotes) for the legend of the upper rendering. Default
-#' is NULL.
+#' @param upper_name The label name (in quotes) for the legend of the upper
+#' rendering. Default is \code{NULL}.
 #' @param upper_colors A color vector, usually as hexcodes.
-#' @param ... ... accepts any arguments scale_fill_gradientn() has.
+#' @param ... \code{...} accepts any arguments \code{scale_fill_gradientn()} has
+#' .
 #'
 #' @import ggplot2
 #' @import grid
 #' @import ggnewscale
 #'
-#' @return A heattriangle (modified heatmap) with two triangles on each single unit.
+#' @return A heattriangle (modified heatmap) with two triangles on each single
+#' unit.
 #' @export
 #'
 #' @examples

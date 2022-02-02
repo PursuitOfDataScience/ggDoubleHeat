@@ -18,29 +18,31 @@ geom_heat_circle(
 \arguments{
 \item{outside}{The column name for the outside portion of heatcircle.}
 
-\item{outside_name}{The label name (in quotes) for the legend of the outside rendering. Default
-is NULL.}
+\item{outside_name}{The label name (in quotes) for the legend of the outside
+rendering. Default is \code{NULL}.}
 
 \item{outside_colors}{A color vector, usually as hexcodes.}
 
 \item{inside}{The column name for the inside portion of heatcircle.}
 
-\item{inside_name}{The label name (in quotes) for the legend of the inside rendering. Default
-is NULL.}
+\item{inside_name}{The label name (in quotes) for the legend of the inside
+rendering. Default is \code{NULL}.}
 
 \item{inside_colors}{A color vector, usually as hexcodes.}
 
-\item{r}{The value that controls how large of the inside portion with respect to the outside one.
-When r is larger, the inside get smaller. Default value is 3.}
+\item{r}{The value that controls how large of the inside portion with respect
+to the outside one. When \code{r} is larger, the inside get smaller. Default
+value is 3.}
 
-\item{...}{... accepts any arguments scale_fill_gradientn() has.}
+\item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
+.}
 }
 \value{
 A heatcircle (modified heatmap) with nested circles.
 }
 \description{
-The heatcircle geom is used to create the two concentric circles that use luminance to
-show the values from two sources on the same plot.
+The heatcircle geom is used to create the two concentric circles that use
+luminance to show the values from two sources on the same plot.
 }
 \examples{
 

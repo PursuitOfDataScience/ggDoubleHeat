@@ -1,18 +1,21 @@
 #' Heatgrid
 #'
-#' The heatgrid geom is used to create a modified heat map that uses luminance to
-#' show the values from two sources on the same plot.
+#' The heatgrid geom is used to create a modified heat map that uses luminance
+#' to show the values from two sources on the same plot.
+#'
 #' @param outside The column name for the outside portion of heatgrid.
-#' @param outside_name The label name (in quotes) for the legend of the outside rendering. Default
-#' is NULL.
+#' @param outside_name The label name (in quotes) for the legend of the outside
+#' rendering. Default is \code{NULL}.
 #' @param outside_colors A color vector, usually as hexcodes.
 #' @param inside The column name for the inside portion of heatgrid.
-#' @param inside_name The label name (in quotes) for the legend of the inside rendering. Default
-#' is NULL.
+#' @param inside_name The label name (in quotes) for the legend of the inside
+#' rendering. Default is \code{NULL}.
 #' @param inside_colors A color vector, usually as hexcodes.
-#' @param r The value that controls how large of the inside portion with respect to the outside one.
-#' When r is larger, the inside get smaller. Default value is 3.
-#' @param ... ... accepts any arguments scale_fill_gradientn() has.
+#' @param r The value that controls how large of the inside portion with respect
+#' to the outside one. When \code{r} is larger, the inside get smaller.
+#' Default value is 3.
+#' @param ... \code{...} accepts any arguments \code{scale_fill_gradientn()} has
+#' .
 #'
 #' @import ggplot2
 #' @import grid

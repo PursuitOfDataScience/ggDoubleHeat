@@ -11,7 +11,8 @@ An object of class \code{character} of length 270.
 pitts_emojis
 }
 \description{
-The most popular emoji of a given week in a given category from the Meltwater tweet sample
-They can be rendered by using \code{"richtext"} with \code{annotate()}.
+The most popular emoji of a given week in a given category from the Meltwater
+tweet sample. They can be rendered by using \code{"richtext"} with
+\code{annotate()}.
 }
 \keyword{datasets}

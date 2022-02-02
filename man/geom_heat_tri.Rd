@@ -17,26 +17,29 @@ geom_heat_tri(
 \arguments{
 \item{lower}{The column name for the lower portion of heattriangle.}
 
-\item{lower_name}{The label name (in quotes) for the legend of the lower rendering. Default
-is NULL.}
+\item{lower_name}{The label name (in quotes) for the legend of the lower
+rendering. Default is \code{NULL}.}
 
 \item{lower_colors}{A color vector, usually as hexcodes.}
 
 \item{upper}{The column name for the upper portion of heattriangle.}
 
-\item{upper_name}{The label name (in quotes) for the legend of the upper rendering. Default
-is NULL.}
+\item{upper_name}{The label name (in quotes) for the legend of the upper
+rendering. Default is \code{NULL}.}
 
 \item{upper_colors}{A color vector, usually as hexcodes.}
 
-\item{...}{... accepts any arguments scale_fill_gradientn() has.}
+\item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
+.}
 }
 \value{
-A heattriangle (modified heatmap) with two triangles on each single unit.
+A heattriangle (modified heatmap) with two triangles on each single
+unit.
 }
 \description{
-The heattriangle geom is used to create the two triangles split by a diagonal line of a rectangle
-that use luminance to show the values from two sources on the same plot.
+The heattriangle geom is used to create the two triangles split by a diagonal
+line of a rectangle that use luminance to show the values from two sources on
+the same plot.
 }
 \examples{
 

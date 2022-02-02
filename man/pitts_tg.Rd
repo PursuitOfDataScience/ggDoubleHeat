@@ -11,13 +11,16 @@ A data frame with 270 rows and 6 columns:
   \item{week}{week 1 to week 30.}
   \item{week_start}{The Monday date of the week started.}
   \item{category}{9 Covid-related categories in total.}
-  \item{Twitter}{weekly tweets percentage in the MSA falling into each category.}
-  \item{Google}{weekly Google search percentage in the MSA falling into each category.}
+  \item{Twitter}{weekly tweets percentage (\%) in the MSA falling into each
+  category.}
+  \item{Google}{weekly Google search percentage (\%) in the MSA falling into
+  each category.}
 }
 }
 \source{
 Google is processed from Google Health API, and Twitter
-from Meltwater, a Twitter vendor.
+from Meltwater, a Twitter vendor. Both data sources are processed by
+the authors of the package.
 }
 \usage{
 pitts_tg

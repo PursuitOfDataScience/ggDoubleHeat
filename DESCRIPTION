@@ -1,18 +1,18 @@
 Package: ggDoubleHeat
 Type: Package
-Title: Visualize two data sources by using reformed heat maps
+Title: A Heatmap-like Visualization Tool
 Version: 0.1.0
-Author: Youzhi Yu
+Author: Trent Buskirk <buskirk@bgsu.edu>, Youzhi Yu <yuyouzhi666@icloud.com>
 Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
-Description: An extension of the ggplot2 package
-License: MIT + file LICENSE
+Description: A data visualization design that provides comparison between two data sources 
+    (usually on a par with each other) on the same plot, while inheriting ggplot2 features.  
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Depends:
-    R (>= 3.3)
+    R (>= 3.5.0)
 Imports:
     rlang,
     ggplot2 (>= 3.0.0),
     ggnewscale (>= 0.4.5)
 RoxygenNote: 7.1.2
-
