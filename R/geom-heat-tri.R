@@ -35,6 +35,7 @@
 #' ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
 #'                                        upper = upper_values)
 #'
+#'
 #' # heatcircle with numeric variables only
 #'
 #' data <- data.frame(x = rep(c(1, 2, 3), 3),

@@ -36,6 +36,12 @@
 #' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
 #'                                         inside = inside_values)
 #'
+#' # Making the inside smaller by setting r to be larger.
+#'
+#' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
+#'                                         inside = inside_values,
+#'                                         r = 5)
+#'
 #' # heatgrid with numeric variables only
 #'
 #' data <- data.frame(x = rep(c(1, 2, 3), 3),
