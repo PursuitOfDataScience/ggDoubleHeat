@@ -6,11 +6,11 @@
 #' @param outside The column name for the outside portion of heatcircle.
 #' @param outside_name The label name (in quotes) for the legend of the outside
 #' rendering. Default is \code{NULL}.
-#' @param outside_colors A color vector, usually as hexcodes.
+#' @param outside_colors A color vector, usually as hex codes.
 #' @param inside The column name for the inside portion of heatcircle.
 #' @param inside_name The label name (in quotes) for the legend of the inside
 #' rendering. Default is \code{NULL}.
-#' @param inside_colors A color vector, usually as hexcodes.
+#' @param inside_colors A color vector, usually as hex codes.
 #' @param r The value that controls how large of the inside portion with respect
 #' to the outside one. When \code{r} is larger, the inside get smaller. Default
 #' value is 3.

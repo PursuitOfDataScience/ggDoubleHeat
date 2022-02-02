@@ -1,9 +1,12 @@
-#' Pittsburgh Covid related Google & Twitter incidence rates
+#' Pittsburgh COVID related Google & Twitter incidence rates
 #'
-#' A dataset containing the 30-week incidence rates of Covid related categories
+#' A data set containing the 30-week incidence rates of COVID related categories
 #' from week 1 starting from June 1, 2020 to week 30
 #' that ended in the last Sunday of the year in Pittsburgh Metropolitan
-#' Statistical Area (MSA). The data columns are introduced below.
+#' Statistical Area (MSA). The data columns are introduced below. One quick note
+#' about the columns of the data set: \code{week_start} as a column is present
+#' in the data set for illustration purposes, reminding users what \code{week}
+#' column is. In other words, it does not participate any visualization.
 #' @format A data frame with 270 rows and 6 columns:
 #' \describe{
 #'   \item{msa}{Metropolitan statistical area (Pittsburgh only).}

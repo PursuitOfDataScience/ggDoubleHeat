@@ -20,14 +20,14 @@ geom_heat_tri(
 \item{lower_name}{The label name (in quotes) for the legend of the lower
 rendering. Default is \code{NULL}.}
 
-\item{lower_colors}{A color vector, usually as hexcodes.}
+\item{lower_colors}{A color vector, usually as hex codes.}
 
 \item{upper}{The column name for the upper portion of heattriangle.}
 
 \item{upper_name}{The label name (in quotes) for the legend of the upper
 rendering. Default is \code{NULL}.}
 
-\item{upper_colors}{A color vector, usually as hexcodes.}
+\item{upper_colors}{A color vector, usually as hex codes.}
 
 \item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
 .}

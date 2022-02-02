@@ -21,14 +21,14 @@ geom_heat_grid(
 \item{outside_name}{The label name (in quotes) for the legend of the outside
 rendering. Default is \code{NULL}.}
 
-\item{outside_colors}{A color vector, usually as hexcodes.}
+\item{outside_colors}{A color vector, usually as hex codes.}
 
 \item{inside}{The column name for the inside portion of heatgrid.}
 
 \item{inside_name}{The label name (in quotes) for the legend of the inside
 rendering. Default is \code{NULL}.}
 
-\item{inside_colors}{A color vector, usually as hexcodes.}
+\item{inside_colors}{A color vector, usually as hex codes.}
 
 \item{r}{The value that controls how large of the inside portion with respect
 to the outside one. When \code{r} is larger, the inside get smaller.
