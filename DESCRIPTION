@@ -5,8 +5,8 @@ Version: 0.1.0
 Author: Trent Buskirk <buskirk@bgsu.edu>, Youzhi Yu <yuyouzhi666@icloud.com>
 Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
 Description: A data visualization design that provides comparison between 
-    two data sources (usually on a par with each other) on the same plot, while 
-    inheriting ggplot2 features.  
+    two (Double) data sources (usually on a par with each other) on one 
+    reformed heatmap, while inheriting ggplot2 features.  
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
@@ -17,3 +17,9 @@ Imports:
     ggplot2 (>= 3.0.0),
     ggnewscale (>= 0.4.5)
 RoxygenNote: 7.1.2
+Suggests: 
+    rmarkdown,
+    knitr,
+    dplyr,
+    scales
+VignetteBuilder: knitr
