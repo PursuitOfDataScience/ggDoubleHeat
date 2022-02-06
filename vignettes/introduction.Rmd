@@ -147,11 +147,31 @@ states_tg %>%
 Another way to think about using *ggDoubleHeat* is when comparing mean and median. Let’s use the following `iris` example to demonstrate it:
 
 ```{r}
-iris %>%
+iris_summarized <- iris %>%
   pivot_longer(c(1:4), names_to = "metric") %>%
   group_by(Species, metric) %>%
   summarize(mean = mean(value),
             median = median(value)) %>%
+  ungroup()
+
+iris_summarized
+```
+
+One of the ways to visualize `iris_summarized` is as follows:
+
+```{r}
+iris_summarized %>%
+  pivot_longer(c(mean:median), names_to = "summary_metric") %>%
+  ggplot(aes(value, Species, fill = summary_metric)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~metric) +
+  labs(fill = NULL)
+```
+
+Now we can use heatgrid to visualize the summarized data:
+
+```{r}
+iris_summarized %>%
   ggplot(aes(Species, metric)) +
   geom_heat_grid(outside = mean, inside = median)
 ```
