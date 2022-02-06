@@ -15,7 +15,7 @@ development version with:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
+# devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
 ```
 
 ## Usage
@@ -23,8 +23,8 @@ devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
 Here in this section, two functions `geom_heat_grid()` and
 `geom_heat_circle()` are illustrated.
 
-For demostration purposes, the built-in dataset `pitts_tg` to illustrate
-the basic usage of the package.
+For demonstration purposes, the built-in dataset `pitts_tg` to
+illustrate the basic usage of the package.
 
 ``` r
 library(ggDoubleHeat)
@@ -48,12 +48,12 @@ pitts_tg
     ## # ... with 260 more rows
 
 `pitts_tg` is a dataset that collects the 30-week period of
-Covid-related Google & Twitter incidence rate for 9 different categories
+COVID-related Google & Twitter incidence rate for 9 different categories
 from the Pittsburgh Metropolitan Statistical Area (MSA). For the
 complete information of the dataset, please type `?pitts_tg` on the
 console.
 
-`geom_heat_grid()`:
+Let’s start with `geom_heat_grid()`:
 
 ``` r
 ggplot(data = pitts_tg, aes(x = week, y = category)) +
@@ -63,7 +63,7 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
 
 ![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
-Now changing `geom_heat_grid()` to `geom_heat_circle()`,
+Now changing `geom_heat_grid()` to `geom_heat_circle()`:
 
 ``` r
 ggplot(data = pitts_tg, aes(x = week, y = category)) +
@@ -73,25 +73,35 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
 
 ![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
-To make things a bit more colorful, the most popular emoji for a given
-week in a given category from some Twitter daily sample files are
-rendered on the heatgrid by using `ggtext`:
+Let’s use `geom_heat_tri()`:
 
 ``` r
-#install.packages("ggtext")
-library(ggtext)
-
 ggplot(data = pitts_tg, aes(x = week, y = category)) +
-  geom_heat_grid(outside = Google, inside = Twitter) +
-  # rendering emojis using "richtext"
-  annotate("richtext", x = rep(c(1:30), 9), y = rep(1:9, each = 30), 
-           label = pitts_emojis, label.color = NA, fill = NA, size = 0.3) +
+  geom_heat_tri(lower = Google, upper = Twitter) +
   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
 ![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
-Note: It is a tad time consuming to run the code above due to emojis.
-Also, `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`.
+To make things a bit more colorful, the most popular emoji for a given
+week in a given category from some Twitter daily sample files are
+rendered on the heatgrid by using `ggtext`. The following code is
+commented, as it takes few minutes to generate. If you would like to see
+it, just simply comment out the code.
+
+``` r
+# install.packages("ggtext")
+# library(ggtext)
+# 
+# ggplot(data = pitts_tg, aes(x = week, y = category)) +
+#   geom_heat_grid(outside = Google, inside = Twitter) +
+#   # rendering emojis using "richtext"
+#   annotate("richtext", x = rep(c(1:30), 9), y = rep(1:9, each = 30), 
+#            label = pitts_emojis, label.color = NA, fill = NA, size = 0.3) +
+#   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
+```
+
+Note: `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`.
 Another thing worth noting is that there are some grids that do not have
-emoji, and the reason is there is no emoji in the Twitter sample file.
+emoji, and the reason is there is no emoji unicode in the Twitter sample
+file.
