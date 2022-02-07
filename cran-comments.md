@@ -1,5 +1,5 @@
-# R CMD check results
+## R CMD check results
 
-There were no ERRORs, WARNINGs or NOTEs.
+0 errors | 0 warnings | 0 notes
 
-This is a new submission.
+* This is a new release.
