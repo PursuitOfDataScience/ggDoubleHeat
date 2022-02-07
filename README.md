@@ -1,6 +1,11 @@
 ggDoubleHeat
 ================
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
+<!-- badges: end -->
+
 The `ggDoubleHeat` package is a `ggplot2` extension that provides
 visualization for data from two different sources on a modified heat
 map. All functions from the package are named as `geom_heat_*()`. A

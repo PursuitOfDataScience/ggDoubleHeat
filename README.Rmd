@@ -2,6 +2,9 @@
 title: "ggDoubleHeat"
 output: github_document
 ---
+<!-- badges: start -->
+  [![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
+  <!-- badges: end -->
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
@@ -9,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE,
                       message = FALSE,
                       fig.path = "man/figures/README-")
 ```
+
+
 
 The `ggDoubleHeat` package is a `ggplot2` extension that provides visualization for data from two different sources on a modified heat map. All functions from the package are named as `geom_heat_*()`. A regular heat map, which can be made by using `ggplot2::geom_tile()`, contains three dimensions (variables). `geom_heat_*()`, however, can express four dimensions of data on a single plot. 
 
