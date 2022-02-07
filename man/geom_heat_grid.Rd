@@ -37,9 +37,6 @@ Default value is 3.}
 \item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
 .}
 }
-\value{
-A heatgrid (modified heatmap) with nested tiles.
-}
 \description{
 The heatgrid geom is used to create a modified heat map that uses luminance
 to show the values from two sources on the same plot.
@@ -53,14 +50,16 @@ data <- data.frame(x = rep(c("a", "b", "c"), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-                                        inside = inside_values)
+ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+               geom_heat_grid(outside = outside_values,
+                              inside = inside_values)
 
 # Making the inside smaller by setting r to be larger.
 
-ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-                                        inside = inside_values,
-                                        r = 5)
+ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+                geom_heat_grid(outside = outside_values,
+                               inside = inside_values,
+                               r = 5)
 
 # heatgrid with numeric variables only
 
@@ -69,8 +68,9 @@ data <- data.frame(x = rep(c(1, 2, 3), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-                                        inside = inside_values)
+ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+                geom_heat_grid(outside = outside_values,
+                               inside = inside_values)
 
 
 # heatgrid with a mixure of numeric and categorical variables
@@ -80,8 +80,9 @@ data <- data.frame(x = rep(c("a", "b", "c"), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-                                        inside = inside_values)
+ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+                geom_heat_grid(outside = outside_values,
+                               inside = inside_values)
 
 
 

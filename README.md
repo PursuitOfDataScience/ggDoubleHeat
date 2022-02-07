@@ -61,7 +61,7 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
 Now changing `geom_heat_grid()` to `geom_heat_circle()`:
 
@@ -71,7 +71,7 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
 
 Let’s use `geom_heat_tri()`:
 
@@ -81,7 +81,7 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 To make things a bit more colorful, the most popular emoji for a given
 week in a given category from some Twitter daily sample files are

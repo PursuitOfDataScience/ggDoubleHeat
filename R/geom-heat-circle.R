@@ -22,7 +22,6 @@
 #' @import rlang
 #' @import ggnewscale
 
-#' @return A heatcircle (modified heatmap) with nested circles.
 #' @export
 #'
 #' @examples
@@ -34,15 +33,17 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
-#'                                           inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_circle(outside = outside_values,
+#'                                  inside = inside_values)
 #'
 #'
 #' # Making the inside smaller by setting r to be larger.
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
-#'                                           inside = inside_values,
-#'                                           r = 5)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_circle(outside = outside_values,
+#'                                  inside = inside_values,
+#'                                  r = 5)
 #'
 #'
 #' # heatcircle with numeric variables only
@@ -52,8 +53,9 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
-#'                                           inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_circle(outside = outside_values,
+#'                                  inside = inside_values)
 #'
 #'
 #' # heatcircle with a mixure of numeric and categorical variables
@@ -63,8 +65,9 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_circle(outside = outside_values,
-#'                                           inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_circle(outside = outside_values,
+#'                                  inside = inside_values)
 #'
 
 

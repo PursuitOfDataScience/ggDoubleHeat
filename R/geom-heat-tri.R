@@ -19,8 +19,6 @@
 #' @import grid
 #' @import ggnewscale
 #'
-#' @return A heattriangle (modified heatmap) with two triangles on each single
-#' unit.
 #' @export
 #'
 #' @examples
@@ -28,12 +26,12 @@
 #' # heattriangle with categorical variables only
 #'
 #' data <- data.frame(x = rep(c("a", "b", "c"), 3),
-#'                   y = rep(c("d", "e", "f"), 3),
-#'                   lower_values = rep(c(1,5,7),3),
-#'                   upper_values = rep(c(2,3,4),3))
+#'                    y = rep(c("d", "e", "f"), 3),
+#'                    lower_values = rep(c(1,5,7),3),
+#'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
-#'                                        upper = upper_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
 #' # heatcircle with numeric variables only
@@ -43,8 +41,8 @@
 #'                    lower_values = rep(c(1,5,7),3),
 #'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
-#'                                        upper = upper_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
 #' # heatcircle with a mixure of numeric and categorical variables
@@ -54,8 +52,8 @@
 #'                    lower_values = rep(c(1,5,7),3),
 #'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_tri(lower = lower_values,
-#'                                        upper = upper_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
 
@@ -88,8 +86,8 @@ geom_heat_tri <- function(lower,
 
 #' @format NULL
 #' @usage NULL
-#' @export
-#'
+
+
 GeomTriLowerBase <- ggplot2::ggproto("GeomTriLowerBase", Geom,
                             default_aes = ggplot2::aes(color = NA, fill = "grey30", size = 0.5, linetype = 1,
                                               alpha = NA),
@@ -121,8 +119,6 @@ GeomTriLowerBase <- ggplot2::ggproto("GeomTriLowerBase", Geom,
 
 #' @format NULL
 #' @usage NULL
-#' @export
-#'
 
 
 GeomTriUpperBase <- ggplot2::ggproto("GeomTriUpperBase", GeomTriLowerBase,
@@ -148,8 +144,6 @@ GeomTriUpperBase <- ggplot2::ggproto("GeomTriUpperBase", GeomTriLowerBase,
 
 #' @format NULL
 #' @usage NULL
-#' @export
-
 
 GeomLowerTri <- ggplot2::ggproto("GeomLowerTri", GeomTriLowerBase,
                         extra_params = c("na.rm"),
@@ -185,7 +179,6 @@ GeomLowerTri <- ggplot2::ggproto("GeomLowerTri", GeomTriLowerBase,
 
 #' @format NULL
 #' @usage NULL
-#' @export
 
 
 geom_lower_tri <- function(mapping = NULL, data = NULL,
@@ -213,7 +206,6 @@ geom_lower_tri <- function(mapping = NULL, data = NULL,
 
 #' @format NULL
 #' @usage NULL
-#' @export
 
 
 GeomUpperTri <- ggplot2::ggproto("GeomUpperTri", GeomTriUpperBase,
@@ -250,7 +242,6 @@ GeomUpperTri <- ggplot2::ggproto("GeomUpperTri", GeomTriUpperBase,
 
 #' @format NULL
 #' @usage NULL
-#' @export
 
 
 

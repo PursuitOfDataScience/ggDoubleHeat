@@ -21,7 +21,6 @@
 #' @import grid
 #' @import rlang
 #' @import ggnewscale
-#' @return A heatgrid (modified heatmap) with nested tiles.
 #' @export
 #'
 #' @examples
@@ -33,14 +32,16 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-#'                                         inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                geom_heat_grid(outside = outside_values,
+#'                               inside = inside_values)
 #'
 #' # Making the inside smaller by setting r to be larger.
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-#'                                         inside = inside_values,
-#'                                         r = 5)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_grid(outside = outside_values,
+#'                                inside = inside_values,
+#'                                r = 5)
 #'
 #' # heatgrid with numeric variables only
 #'
@@ -49,8 +50,9 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-#'                                         inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_grid(outside = outside_values,
+#'                                inside = inside_values)
 #'
 #'
 #' # heatgrid with a mixure of numeric and categorical variables
@@ -60,8 +62,9 @@
 #'                    outside_values = rep(c(1,5,7),3),
 #'                    inside_values = rep(c(2,3,4),3))
 #'
-#' ggplot(data, aes(x,y)) + geom_heat_grid(outside = outside_values,
-#'                                         inside = inside_values)
+#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
+#'                 geom_heat_grid(outside = outside_values,
+#'                                inside = inside_values)
 #'
 #'
 #'
@@ -100,7 +103,7 @@ geom_heat_grid <- function(outside,
 
 #' @format NULL
 #' @usage NULL
-#' @export
+
 GeomRectCenter <- ggplot2::ggproto("GeomRectCenter", ggplot2::Geom,
                     default_aes = ggplot2::aes(color = "black", fill = NA, size = 0.5, linetype = 1,
                                       alpha = NA),
@@ -133,7 +136,7 @@ GeomRectCenter <- ggplot2::ggproto("GeomRectCenter", ggplot2::Geom,
 
 #' @format NULL
 #' @usage NULL
-#' @export
+
 GeomTileOutside <- ggplot2::ggproto("GeomTileOutside", GeomRectCenter,
                      extra_params = c("na.rm"),
 
@@ -185,7 +188,7 @@ geom_tile_outside <- function(mapping = NULL, data = NULL,
 
 #' @format NULL
 #' @usage NULL
-#' @export
+
 GeomTileInside <- ggplot2::ggproto("GeomTileInside", GeomTileOutside,
 
                           setup_data = function(data, params) {
