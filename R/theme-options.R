@@ -4,17 +4,17 @@
 #' @param base_family base font family
 #' @param base_line_size base size for line elements
 #' @param base_rect_size base size for rect elements
-#'
+#' @import ggplot2
 #' @export
 
 theme_heat <- function(base_size = 11, base_family = "", base_line_size = base_size/22,
                        base_rect_size = base_size/22) {
 
-  theme_bw(base_size = base_size, base_family = base_family,
+  ggplot2::theme_bw(base_size = base_size, base_family = base_family,
            base_line_size = base_line_size, base_rect_size = base_rect_size) %+replace%
 
 
-    theme(legend.position = "bottom",
+    ggplot2::theme(legend.position = "bottom",
           axis.ticks = element_blank(),
           axis.title = element_text(size = 13, color = "#aa381e", face = "bold"),
           axis.text = element_text(size = 11, color = "#aa381e"),
