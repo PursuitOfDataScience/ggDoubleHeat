@@ -45,21 +45,23 @@ to show the values from two sources on the same plot.
 
 # heatgrid with categorical variables only
 
+library(ggplot2)
+
 data <- data.frame(x = rep(c("a", "b", "c"), 3),
                    y = rep(c("d", "e", "f"), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-               geom_heat_grid(outside = outside_values,
-                              inside = inside_values)
+ggplot(data, aes(x,y)) +
+geom_heat_grid(outside = outside_values,
+               inside = inside_values)
 
 # Making the inside smaller by setting r to be larger.
 
-ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-                geom_heat_grid(outside = outside_values,
-                               inside = inside_values,
-                               r = 5)
+ggplot(data, aes(x,y)) +
+geom_heat_grid(outside = outside_values,
+               inside = inside_values,
+               r = 5)
 
 # heatgrid with numeric variables only
 
@@ -68,21 +70,21 @@ data <- data.frame(x = rep(c(1, 2, 3), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-                geom_heat_grid(outside = outside_values,
-                               inside = inside_values)
+ggplot(data, aes(x,y)) +
+geom_heat_grid(outside = outside_values,
+               inside = inside_values)
 
 
-# heatgrid with a mixure of numeric and categorical variables
+# heatgrid with a mixture of numeric and categorical variables
 
 data <- data.frame(x = rep(c("a", "b", "c"), 3),
                    y = rep(c(1, 2, 3), 3),
                    outside_values = rep(c(1,5,7),3),
                    inside_values = rep(c(2,3,4),3))
 
-ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-                geom_heat_grid(outside = outside_values,
-                               inside = inside_values)
+ggplot(data, aes(x,y)) +
+geom_heat_grid(outside = outside_values,
+               inside = inside_values)
 
 
 

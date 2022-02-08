@@ -25,13 +25,15 @@
 #'
 #' # heattriangle with categorical variables only
 #'
+#' library(ggplot2)
+#'
 #' data <- data.frame(x = rep(c("a", "b", "c"), 3),
 #'                    y = rep(c("d", "e", "f"), 3),
 #'                    lower_values = rep(c(1,5,7),3),
 #'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
+#' ggplot(data, aes(x,y)) +
+#' geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
 #' # heatcircle with numeric variables only
@@ -41,19 +43,19 @@
 #'                    lower_values = rep(c(1,5,7),3),
 #'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
+#' ggplot(data, aes(x,y)) +
+#' geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
-#' # heatcircle with a mixure of numeric and categorical variables
+#' # heatcircle with a mixture of numeric and categorical variables
 #'
 #' data <- data.frame(x = rep(c("a", "b", "c"), 3),
 #'                    y = rep(c(1, 2, 3), 3),
 #'                    lower_values = rep(c(1,5,7),3),
 #'                    upper_values = rep(c(2,3,4),3))
 #'
-#' ggplot2::ggplot(data, ggplot2::aes(x,y)) +
-#'                 geom_heat_tri(lower = lower_values, upper = upper_values)
+#' ggplot(data, aes(x,y)) +
+#' geom_heat_tri(lower = lower_values, upper = upper_values)
 #'
 #'
 
