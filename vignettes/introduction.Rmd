@@ -81,6 +81,17 @@ pitts_tg %>%
   remove_padding()
 ```
 
+Regarding the colors for the inside and outside, pass a color vector to `outside_colors` and `inside_colors`:
+
+```{r}
+pitts_tg %>%
+  ggplot(aes(week, category)) +
+  geom_heat_grid(outside = Google, outside_colors = c("lightblue", "springgreen2"),
+                 inside = Twitter, inside_colors = c("lightpink", "orange"))
+```
+
+
+
 #### **II. geom_heat_circle()**
 
 By replacing `geom_heat_grid()` with `geom_heat_circle()`, 
@@ -90,6 +101,17 @@ pitts_tg %>%
   ggplot(aes(week, category)) +
   geom_heat_circle(outside = Google, inside = Twitter)
 ```
+
+We can zoom into the circle plot by looking at Week 10 to 20:
+
+```{r}
+pitts_tg %>%
+  filter(week >= 10, week <= 20) %>%
+  ggplot(aes(week, category)) +
+  geom_heat_circle(outside = Google, inside = Twitter, trans = "sqrt") +
+  scale_x_continuous(breaks = seq(10,20))
+```
+
 
 #### **III. geom_heat_tri()**
 
