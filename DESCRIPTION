@@ -7,7 +7,7 @@ Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
 Description: A data visualization design that provides comparison between 
     two (Double) data sources (usually on a par with each other) on one 
     reformed heatmap, while inheriting ggplot2 features.  
-License: GPL (>= 3) + file LICENSE
+License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
 Depends:
