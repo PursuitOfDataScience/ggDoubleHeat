@@ -25,10 +25,7 @@ development version with:
 
 ## Usage
 
-Here in this section, two functions `geom_heat_grid()` and
-`geom_heat_circle()` are illustrated.
-
-For demonstration purposes, the built-in dataset `pitts_tg` to
+For demonstration purposes, the built-in dataset `pitts_tg` is used to
 illustrate the basic usage of the package.
 
 ``` r
