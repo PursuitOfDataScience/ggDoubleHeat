@@ -9,18 +9,24 @@ ggDoubleHeat
 The `ggDoubleHeat` package is a `ggplot2` extension that provides
 visualization for data from two different sources on a modified heat
 map. All functions from the package are named as `geom_heat_*()`. A
-regular heat map, which can be made by using `ggplot2::geom_tile()`,
-contains three dimensions (variables). `geom_heat_*()`, however, can
-express four dimensions of data on a single plot.
+regular heat map, which can be made by using `geom_tile()` from
+`ggplot2`, contains three dimensions (variables). `geom_heat_*()`,
+however, can express four dimensions of data on a single plot.
 
 ## Installation
 
-You can install the released version of `ggDoubleHeat` from the
-development version with:
+Please install the released version of `ggDoubleHeat` from CRAN with:
+
+``` r
+install.packages("ggDoubleHeat")
+```
+
+Alternatively, you can install the latest development version from
+Github with:
 
 ``` r
 # install.packages("devtools")
-# devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
+devtools::install_github("PursuitOfDataScience/ggDoubleHeat")
 ```
 
 ## Usage
@@ -86,10 +92,12 @@ ggplot(data = pitts_tg, aes(x = week, y = category)) +
 ![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 To make things a bit more colorful, the most popular emoji for a given
-week in a given category from some Twitter daily sample files are
-rendered on the heatgrid by using `ggtext`. The following code is
-commented, as it takes few minutes to generate. If you would like to see
-it, just simply comment out the code.
+week in a given category from the respective Pittsburgh Twitter daily
+sample files is rendered on each component of the heatgrid by using
+`ggtext`. The following code is commented, as it takes few minutes to
+generate. If you would like to run it, just simply uncomment the code.
+**But the generated heatgrid with emojis is attached below as an
+image**.
 
 ``` r
 # install.packages("ggtext")
@@ -103,7 +111,9 @@ it, just simply comment out the code.
 #   ggtitle("Pittsburgh Google & Twitter Incidence Rate (%) Comparison")
 ```
 
+![image](https://user-images.githubusercontent.com/54338793/153519943-24346494-11ec-41df-ba38-b17bc4272fa4.png)
+
 Note: `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`.
-Another thing worth noting is that there are some grids that do not have
-emoji, and the reason is there is no emoji unicode in the Twitter sample
-file.
+Another thing worth noting is that there are some grids not having
+emoji, and the reason is that there is no emoji unicode in the Twitter
+sample file.
