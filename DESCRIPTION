@@ -2,7 +2,7 @@ Package: ggDoubleHeat
 Type: Package
 Title: A Heatmap-like Visualization Tool
 Version: 0.1.0
-Author: Trent Buskirk, Youzhi Yu
+Author: Youzhi Yu, Trent Buskirk 
 Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
 Description: A data visualization design that provides comparison between 
     two (Double) data sources (usually on a par with each other) on one 
