@@ -2,8 +2,14 @@ Package: ggDoubleHeat
 Type: Package
 Title: A Heatmap-like Visualization Tool
 Version: 0.1.0
-Author: Youzhi Yu, Trent Buskirk 
-Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>
+Authors@R: 
+    c(person(given = "Youzhi",
+             family = "Yu",
+             role = c("aut", "cre"),
+             email = "yuyouzhi666@icloud.com"),
+      person(given = "Trent",
+             family = "Buskirk",
+             role = c("aut", "ths")))
 Description: A data visualization design that provides comparison between 
     two (Double) data sources (usually on a par with each other) on one 
     reformed heatmap, while inheriting 'ggplot2' features.  
