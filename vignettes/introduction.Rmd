@@ -1,8 +1,6 @@
 ---
 title: "Introduction to ggDoubleHeat"
 output: rmarkdown::html_vignette
-author: "Youzhi Yu, Trent Buskirk"
-date: "`r Sys.Date()`"
 vignette: >
   %\VignetteIndexEntry{Introduction to ggDoubleHeat}
   %\VignetteEngine{knitr::rmarkdown}
@@ -20,15 +18,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-The *ggDoubleHeat* package is a ggplot2 extension. *ggDoubleHeat* plots are reformed heat maps that compare two sets of values with shared data attributes. They can be quite useful for visualizing data from two different sources with at least four dimensions in total, and can be generated in conjunction with using *ggplot2* at ease. 
+The *ggDoubleHeat* package is a *ggplot2* extension. *ggDoubleHeat* plots are reformed heat maps that compare two sets of values with shared data attributes. They can be quite useful for visualizing data from two different sources with at least four dimensions in total, and can be generated in conjunction with using *ggplot2* at ease. 
 
-## How to use the package?
+## When to use the package?
 
-### Meet the `geom_heat_*()` family
-
-All functions in *ggDoubleHeat* are named `geom_heat_*()` for consistency. Unlike a typical `geom_*()`function in ggplot2, all data variables do not need `aes()` when using `geom_heat_*()`, allowing plots having different color renderings internally. 
-
-Before generating any plot, it is necessary to introduce one of the built-in data sets in the package `pitts_tg`. This data set includes Google and Twitter COVID-related searches and tweets (with keywords included in the 9 categories) incidence rate respectively in the Pittsburgh Metropolitan Statistical Area (MSA) in a 30-week period. For complete data introduction, just type `?pitts_tg` at the console.
+To begin with, it is necessary to introduce one of the built-in data sets in the package `pitts_tg`. This data set includes the weekly aggregated incidence rate for Google and Twitter COVID-related searches and tweets (with keywords included in the 9 categories) respectively in the Pittsburgh Metropolitan Statistical Area (MSA) in a 30-week period. For complete data introduction, just type `?pitts_tg` at the console.
 
 Here is the structure of the data set: 
 
@@ -42,7 +36,32 @@ pitts_tg
 
 `week`, `category`, `Twitter`, and `Google` are the four columns we need.
 
+
+By using *ggplot2* only, one of the heatmap-like ways to visualize `pitts_tg` is:
+
+```{r}
+library(tidyr)
+pitts_tg %>%
+  pivot_longer(cols = c(Twitter:Google), names_to = "source", values_to = "incidence_rate") %>%
+  ggplot(aes(week, category, fill = incidence_rate)) +
+  geom_tile() +
+  facet_wrap(~source)
+```
+
+
+When looking at the faceted plot, we immediately recognize that it is not easy to compare Google and Twitter incidence rate for a specific week and a specific category, as they are far apart from each other. To better visualize the data, here we have the *ggDoubleHeat* package, combining the above faceted plots into an integral one, while making it much easier to compare the difference among Google/Twitter incidence rates.  
+
+
+
+## How to use the package?
+
+All geom functions in *ggDoubleHeat* are adopted as `geom_heat_*()` for consistent naming conventions. Unlike a typical `geom_*()` function in ggplot2, all data variables do not need `aes()` when using `geom_heat_*()`, allowing plots to have different color renderings internally.
+
+Now let's meet the `geom_heat_*()` family one by one:
+
 #### **I. geom_heat_grid()**
+
+Two required arguments are needed when using `geom_heat_grid()`, `outside` and `inside`:  
 
 ```{r}
 library(dplyr)
@@ -51,7 +70,7 @@ pitts_tg %>%
   geom_heat_grid(outside = Google, inside = Twitter)
 ```
 
-If we think the colors on the above heatgrid get washed out, `trans = "sqrt"` is a good option to adjust the scale for `fill`.
+The outside portion of each heatgrid unit represents the Google incidence rate, and the inside the Twitter one. When looking the plot, it seems like the Covid category is an outlier among every week, comprising the larger values for both Google and Twitter when compared to other categories. Consequently, the non-Covid categories have plain colors, or in other words, the colors get washed out. One of the solutions is `trans = "sqrt"`, a good option for adjusting the scale for `fill`.
 
 ```{r}
 pitts_tg %>%
@@ -59,9 +78,9 @@ pitts_tg %>%
   geom_heat_grid(outside = Google, inside = Twitter, trans = "sqrt")
 ```
 
-`trans = "sqrt"` here is equivalent to `scale_x/y_sqrt()` but for `fill`.
+`trans = "sqrt"` here is equivalent to `scale_x/y_sqrt()` but for `fill`. The reason why `log10` is not used on `trans` is that the most of the values from the data are less than 1, making the `fill` to be negative.
 
-If we want to decrease the area of the inside, `r` should be increased.
+The argument `r` is to tune the size of inside portion with respect to each grid. Users can make the fine adjustment based on their preference.  
 
 ```{r}
 pitts_tg %>%
@@ -69,10 +88,10 @@ pitts_tg %>%
   geom_heat_grid(outside = Google, inside = Twitter, r = 5)
 ```
 
-The larger `r` is, the samller the inside turns out to be. Note: `r` has to be greater than 2. 
+The larger `r` is, the smaller the inside turns out to be. N.B. `r` has to be greater than 2. 
 
 
-*ggplot2* by default gives some padding (margins) around the plot. *ggDoubleHeat* provides a nifty function `remove_padding()` to help remove it and thus make the plot take up the entire plot space.
+*ggplot2* by default gives some padding (margins) around the plot. *ggDoubleHeat* provides a nifty function `remove_padding()` to help remove it and thus make the plot take up the entire plot space with the full appearance.
 
 ```{r}
 pitts_tg %>%
@@ -81,7 +100,7 @@ pitts_tg %>%
   remove_padding()
 ```
 
-Regarding the colors for the inside and outside, pass a color vector to `outside_colors` and `inside_colors`:
+Regarding the colors for the inside and outside, users can pass a color vector to arguments `outside_colors` and `inside_colors` respectively:
 
 ```{r}
 pitts_tg %>%
@@ -123,12 +142,13 @@ pitts_tg %>%
 
 Unlike `geom_heat_grid/circle()` sharing the exact same arguments, `geom_heat_tri()` has slightly different arguments than the previous two `geom_heat_*()` functions. Instead of using `outside` and `inside`, it has `lower` and `upper`. Also, `r` does not exist in this function. Users can figure out why this is the case. 
 
-Now we can tidy the heatgrid up:
+Now we can tidy up the heatgrid shown above:
 
 ```{r}
 pitts_tg %>%
   ggplot(aes(week, category)) +
   geom_heat_grid(outside = Google, inside = Twitter, trans = "sqrt",
+                 r = 3.6,
                  labels = scales::percent_format(scale = 1)) +
   theme_heat() +
   remove_padding() +
@@ -138,26 +158,11 @@ pitts_tg %>%
 `theme_heat()` is a theme provided by the package.
 
 
-## When to use the package?
-
-Without *ggDoubleHeat*, one of the heatmap-like ways to visualize `pitts_tg` is:
-
-```{r}
-library(tidyr)
-pitts_tg %>%
-  pivot_longer(cols = c(Twitter:Google), names_to = "source", values_to = "incidence_rate") %>%
-  ggplot(aes(week, category, fill = incidence_rate)) +
-  geom_tile() +
-  facet_wrap(~source)
-```
 
 
-When looking at the faceted plot, we immediately recognize it is not easy to compare Google and Twitter incidence rate for a specific week and a specific category, as they are far apart from each other. `geom_heat_*()` in essence combines the faceted plots into one integral plot, while making it much easier to compare the difference among Google/Twitter incidence rates. 
+So far, we have only visualized the incidence rates in Pittsburgh. Since we used faceting when visualizing `pitts_tg` at the begining, it is time to make a heatgrid with multiple states involved.
 
-
-So far, we have only visualized the incidence rates in Pittsburgh. Since we mentioned faceting above, it is time to make a heatgrid with multiple states involved.
-
-`states_tg` is another data set in the package, providing Google and Twitter incidence rate for 4 states in the U.S., and it has the exact same data structure as `pitts_tg`. For more information, just type `?states_tg` at the console. 
+`states_tg` is another data set in the package, providing Google and Twitter weekly incidence rate for 4 states in the U.S., and it has the exact same data structure as `pitts_tg`. For more information, just type `?states_tg` at the console. 
 
 ```{r fig.height=5, fig.width=8}
 states_tg %>%
@@ -166,7 +171,7 @@ states_tg %>%
   facet_wrap(~state) 
 ```
 
-We have been discussing using the package to compare two data sources, but the other way to think about using *ggDoubleHeat* is when comparing mean and median of a single source. Let’s use the following `iris` example to demonstrate it:
+We have been discussing using the package to compare two data sources (i.e. Twitter & Google), but the other way to think about using *ggDoubleHeat* is when comparing mean and median of a single source. Let’s use the following `iris` example to demonstrate it:
 
 ```{r}
 iris_summarized <- iris %>%
