@@ -32,3 +32,4 @@ Suggests:
     tidyr
 VignetteBuilder: knitr
 URL: https://pursuitofdatascience.github.io/ggDoubleHeat/
+BugReports: https://github.com/PursuitOfDataScience/ggDoubleHeat/issues

@@ -6,8 +6,6 @@ development:
   mode: release
 
 authors:
-  footer:
-    text: "Crafted by"
   sidebar:
     roles: [aut, cre]
 
