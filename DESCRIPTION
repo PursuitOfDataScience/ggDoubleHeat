@@ -31,3 +31,4 @@ Suggests:
     scales,
     tidyr
 VignetteBuilder: knitr
+URL: https://pursuitofdatascience.github.io/ggDoubleHeat/
