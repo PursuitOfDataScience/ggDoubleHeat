@@ -21,7 +21,7 @@
 #' @import grid
 #' @import rlang
 #' @import ggnewscale
-
+#' @return A heatcircle comparing two data sources.
 #' @export
 #'
 #' @examples

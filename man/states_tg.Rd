@@ -3,7 +3,7 @@
 \docType{data}
 \name{states_tg}
 \alias{states_tg}
-\title{States' COVID related Google & Twitter incidence rates}
+\title{States' COVID-related Google & Twitter incidence rates}
 \format{
 A data frame with 1116 rows and 6 columns:
 \describe{

@@ -37,6 +37,9 @@ Default value is 3.}
 \item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
 .}
 }
+\value{
+A heatgrid comparing two data sources.
+}
 \description{
 The heatgrid geom is used to create a modified heat map that uses luminance
 to show the values from two sources on the same plot.

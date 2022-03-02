@@ -20,7 +20,8 @@
 #' @import ggnewscale
 #'
 #' @export
-#'
+#' @return A heattriangle with the main diagonal split by a line within each
+#' unit.
 #' @examples
 #'
 #' # heattriangle with categorical variables only

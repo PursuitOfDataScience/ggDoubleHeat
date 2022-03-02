@@ -22,7 +22,7 @@
 #' @import rlang
 #' @import ggnewscale
 #' @export
-#'
+#' @return A heatgrid comparing two data sources.
 #' @examples
 #'
 #' # heatgrid with categorical variables only

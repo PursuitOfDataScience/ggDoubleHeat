@@ -22,7 +22,7 @@ The *ggDoubleHeat* package is a *ggplot2* extension. *ggDoubleHeat* plots are re
 
 ## When to use the package?
 
-To begin with, it is necessary to introduce one of the built-in data sets in the package `pitts_tg`. This data set includes the weekly aggregated incidence rate for Google and Twitter COVID-related searches and tweets (with keywords included in the 9 categories) respectively in the Pittsburgh Metropolitan Statistical Area (MSA) in a 30-week period. For complete data introduction, just type `?pitts_tg` at the console.
+To begin with, it is necessary to introduce one of the built-in data sets in the package `pitts_tg`. This data set includes the weekly aggregated incidence rate for Google and Twitter COVID-related searches and tweets (with the keywords falling into the 9 categories) respectively in the Pittsburgh Metropolitan Statistical Area (MSA) in a 30-week period. For the complete data introduction, just type `?pitts_tg` at the console.
 
 Here is the structure of the data set: 
 
@@ -40,6 +40,7 @@ pitts_tg
 By using *ggplot2* only, one of the heatmap-like ways to visualize `pitts_tg` is:
 
 ```{r}
+library(dplyr)
 library(tidyr)
 pitts_tg %>%
   pivot_longer(cols = c(Twitter:Google), names_to = "source", values_to = "incidence_rate") %>%
@@ -64,13 +65,12 @@ Now let's meet the `geom_heat_*()` family one by one:
 Two required arguments are needed when using `geom_heat_grid()`, `outside` and `inside`:  
 
 ```{r}
-library(dplyr)
 pitts_tg %>%
   ggplot(aes(week, category)) +
   geom_heat_grid(outside = Google, inside = Twitter)
 ```
 
-The outside portion of each heatgrid unit represents the Google incidence rate, and the inside the Twitter one. When looking the plot, it seems like the Covid category is an outlier among every week, comprising the larger values for both Google and Twitter when compared to other categories. Consequently, the non-Covid categories have plain colors, or in other words, the colors get washed out. One of the solutions is `trans = "sqrt"`, a good option for adjusting the scale for `fill`.
+The outside portion of each heatgrid unit represents the Google incidence rate, and the inside the Twitter one. When looking the plot, it seems like the COVID category is an outlier among every week, comprising the larger values for both Google and Twitter when compared to the values of the other categories. Consequently, the non-COVID categories have plain colors, or in other words, the colors get washed out. One of the solutions is `trans = "sqrt"`, a good option for adjusting the scale for `fill`.
 
 ```{r}
 pitts_tg %>%
@@ -78,7 +78,7 @@ pitts_tg %>%
   geom_heat_grid(outside = Google, inside = Twitter, trans = "sqrt")
 ```
 
-`trans = "sqrt"` here is equivalent to `scale_x/y_sqrt()` but for `fill`. The reason why `log10` is not used on `trans` is that the most of the values from the data are less than 1, making the `fill` to be negative.
+`trans = "sqrt"` here is equivalent to `scale_x/y_sqrt()` but for `fill`. The reason why `log10` is not used on `trans` is that the most of the values from the data are less than 1, making `fill` to be negative.
 
 The argument `r` is to tune the size of inside portion with respect to each grid. Users can make the fine adjustment based on their preference.  
 
@@ -91,7 +91,7 @@ pitts_tg %>%
 The larger `r` is, the smaller the inside turns out to be. N.B. `r` has to be greater than 2. 
 
 
-*ggplot2* by default gives some padding (margins) around the plot. *ggDoubleHeat* provides a nifty function `remove_padding()` to help remove it and thus make the plot take up the entire plot space with the full appearance.
+*ggplot2* by default gives some padding (margins) around the plot, yet *ggDoubleHeat* provides a nifty function `remove_padding()` to help remove it and thus make the plot take up the entire plot space with the full appearance.
 
 ```{r}
 pitts_tg %>%
@@ -203,7 +203,7 @@ iris_summarized %>%
   geom_heat_grid(outside = mean, inside = median)
 ```
 
-Here we see the mean and median across all sections are close within each grid. Otherwise, some stark difference would be caught by our eyes, thus giving us a rough picture of how data is distributed. 
+Here we see the mean and median across all sections are rather close within each grid. Otherwise, some stark difference would be caught by our eyes, thus giving us a rough picture of how data is distributed. 
 
 Usually, mean and median are not visualized on the same plot, but visualizing them on the same plot can give viewers important information on whether data has outliers on one side or the other. Using heatgrid can make such visualization easy and effective. 
 

@@ -32,6 +32,10 @@ rendering. Default is \code{NULL}.}
 \item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
 .}
 }
+\value{
+A heattriangle with the main diagonal split by a line within each
+unit.
+}
 \description{
 The heattriangle geom is used to create the two triangles split by a diagonal
 line of a rectangle that use luminance to show the values from two sources on

@@ -2,8 +2,15 @@ ggDoubleHeat
 ================
 
 <!-- badges: start -->
-
 [![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
+<!-- badges: end -->
+
+<!-- badges: start --> [![CRAN
+status](https://www.r-pkg.org/badges/version/ggDoubleHeat)](https://CRAN.R-project.org/package=ggDoubleHeat)
+<!-- badges: end -->
+
+<!-- badges: start --> [![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
 
 The `ggDoubleHeat` package is a `ggplot2` extension that provides
@@ -113,9 +120,9 @@ image**.
 
 ![image](https://user-images.githubusercontent.com/54338793/153519943-24346494-11ec-41df-ba38-b17bc4272fa4.png)
 
-Note: `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`.
+Note: `pitts_emojis` is the Emoji metadata built in `ggDoubleHeat`.
 Another thing worth noting is that there are some grids not having
-emoji, and the reason is that there is no emoji unicode in the Twitter
+Emoji, and the reason is that there is no Emoji Unicode in the Twitter
 sample file.
 
 For more information about `ggDoubleHeat`, please refer to the package

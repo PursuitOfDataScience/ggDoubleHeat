@@ -3,7 +3,7 @@
 \docType{data}
 \name{pitts_tg}
 \alias{pitts_tg}
-\title{Pittsburgh COVID related Google & Twitter incidence rates}
+\title{Pittsburgh COVID-related Google & Twitter incidence rates}
 \format{
 A data frame with 270 rows and 6 columns:
 \describe{

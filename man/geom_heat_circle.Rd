@@ -37,6 +37,9 @@ value is 3.}
 \item{...}{\code{...} accepts any arguments \code{scale_fill_gradientn()} has
 .}
 }
+\value{
+A heatcircle comparing two data sources.
+}
 \description{
 The heatcircle geom is used to create the two concentric circles that use
 luminance to show the values from two sources on the same plot.

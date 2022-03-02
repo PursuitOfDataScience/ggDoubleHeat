@@ -1,6 +1,6 @@
 Package: ggDoubleHeat
 Type: Package
-Title: A Heatmap-like Visualization Tool
+Title: A Heatmap-Like Visualization Tool
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Youzhi",

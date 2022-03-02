@@ -2,9 +2,18 @@
 title: "ggDoubleHeat"
 output: github_document
 ---
-<!-- badges: start -->
+  <!-- badges: start -->
   [![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
   <!-- badges: end -->
+  
+ <!-- badges: start -->
+  [![CRAN status](https://www.r-pkg.org/badges/version/ggDoubleHeat)](https://CRAN.R-project.org/package=ggDoubleHeat)
+  <!-- badges: end -->
+  
+  <!-- badges: start -->
+  [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+  <!-- badges: end -->
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
@@ -89,6 +98,6 @@ To make things a bit more colorful, the most popular emoji for a given week in a
 
 ![image](https://user-images.githubusercontent.com/54338793/153519943-24346494-11ec-41df-ba38-b17bc4272fa4.png)
 
-Note: `pitts_emojis` is the emoji metadata built in `ggDoubleHeat`. Another thing worth noting is that there are some grids not having emoji, and the reason is that there is no emoji unicode in the Twitter sample file.
+Note: `pitts_emojis` is the Emoji metadata built in `ggDoubleHeat`. Another thing worth noting is that there are some grids not having Emoji, and the reason is that there is no Emoji Unicode in the Twitter sample file.
 
 For more information about `ggDoubleHeat`, please refer to the package vignette for a comprehensive introduction. 

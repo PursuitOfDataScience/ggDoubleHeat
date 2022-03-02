@@ -1,4 +1,4 @@
-#' Pittsburgh COVID related Google & Twitter incidence rates
+#' Pittsburgh COVID-related Google & Twitter incidence rates
 #'
 #' A data set containing the 30-week incidence rates of COVID related categories
 #' from week 1 starting from June 1, 2020 to week 30
@@ -24,7 +24,7 @@
 "pitts_tg"
 
 
-#' States' COVID related Google & Twitter incidence rates
+#' States' COVID-related Google & Twitter incidence rates
 #'
 #' A data set containing the 30-week incidence rates of COVID related categories
 #' from week 1 starting from June 1, 2020 to week 30
@@ -55,8 +55,8 @@
 
 #' Popular Emojis
 #'
-#' The most popular emoji of a given week in a given category from the Meltwater
-#' tweet sample. They can be rendered by using \code{"richtext"} with
+#' The most popular Emoji of a given week in a given category from the Meltwater
+#' Tweet sample. They can be rendered by using \code{"richtext"} with
 #' \code{annotate()}.
 #'
 #'
