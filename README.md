@@ -4,6 +4,8 @@ ggDoubleHeat
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/ggDoubleHeat)](https://CRAN.R-project.org/package=ggDoubleHeat)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 <!-- badges: end -->
