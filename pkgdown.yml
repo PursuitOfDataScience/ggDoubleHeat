@@ -1,9 +1,8 @@
 pandoc: 2.7.3
 pkgdown: 2.0.2
 pkgdown_sha: ~
-articles:
-  introduction: introduction.html
-last_built: 2022-03-03T14:47Z
+articles: {}
+last_built: 2022-03-31T21:37Z
 urls:
   reference: https://pursuitofdatascience.github.io/ggDoubleHeat/reference
   article: https://pursuitofdatascience.github.io/ggDoubleHeat/articles
