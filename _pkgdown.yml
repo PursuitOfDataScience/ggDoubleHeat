@@ -20,10 +20,6 @@ navbar:
   left:
   - text: Reference
     href: reference/index.html
-  - text: Vignettes
-    menu:
-    - text: Introduction to ggDoubleHeat
-      href: articles/introduction.html
   - text: News
     href: news/index.html
   right:
