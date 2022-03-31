@@ -1,7 +1,7 @@
 Package: ggDoubleHeat
 Type: Package
 Title: A Heatmap-Like Visualization Tool
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Youzhi",
              family = "Yu",
@@ -30,6 +30,5 @@ Suggests:
     dplyr,
     scales,
     tidyr
-VignetteBuilder: knitr
 URL: https://pursuitofdatascience.github.io/ggDoubleHeat/
 BugReports: https://github.com/PursuitOfDataScience/ggDoubleHeat/issues

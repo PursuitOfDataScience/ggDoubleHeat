@@ -121,6 +121,3 @@ Note: `pitts_emojis` is the Emoji metadata built in `ggDoubleHeat`.
 Another thing worth noting is that there are some grids not having
 Emoji, and the reason is that there is no Emoji Unicode in the Twitter
 sample file.
-
-For more information about `ggDoubleHeat`, please refer to the package
-vignette for a comprehensive introduction.
