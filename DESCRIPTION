@@ -1,7 +1,7 @@
 Package: ggDoubleHeat
 Type: Package
 Title: A Heatmap-Like Visualization Tool
-Version: 0.1.1
+Version: 0.1.2
 Authors@R: 
     c(person(given = "Youzhi",
              family = "Yu",
@@ -23,7 +23,7 @@ Imports:
     grid,
     ggplot2 (>= 3.0.0),
     ggnewscale (>= 0.4.5)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Suggests: 
     rmarkdown,
     knitr,

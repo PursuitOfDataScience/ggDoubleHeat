@@ -3,6 +3,7 @@
 \docType{package}
 \name{ggDoubleHeat}
 \alias{ggDoubleHeat}
+\alias{ggDoubleHeat-package}
 \title{ggDoubleHeat: Data visualization for two sources}
 \description{
 ggDoubleHeat, which is a ggplot2 extension, provides

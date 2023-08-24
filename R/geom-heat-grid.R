@@ -13,7 +13,7 @@
 #' @param inside_colors A color vector, usually as hex codes.
 #' @param r The value that controls how large of the inside portion with respect
 #' to the outside one. When \code{r} is larger, the inside get smaller.
-#' Default value is 3.
+#' Default value is 2*sqrt(2) for achieving the equal inner and outer areas.
 #' @param ... \code{...} accepts any arguments \code{scale_fill_gradientn()} has
 #' .
 #'
@@ -79,7 +79,7 @@ geom_heat_grid <- function(outside,
                            inside,
                            inside_name = NULL,
                            inside_colors = c('gray100', 'gray85', 'gray50', 'gray35', 'gray0'),
-                           r = 3,
+                           r = 2*sqrt(2),
                            ...){
 
   if(r <= 2){rlang::abort(message = "`r` has to be greater than 2.")}
