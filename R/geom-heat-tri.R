@@ -75,13 +75,13 @@ geom_heat_tri <- function(lower,
 
   list(geom_lower_tri(ggplot2::aes(fill = {{ lower }})),
 
-       ggplot2::scale_fill_gradientn(lower_name, colors = lower_colors, ...),
+       ggplot2::scale_fill_gradientn(rlang::as_label(lower_name), colors = lower_colors, ...),
 
        ggnewscale::new_scale_fill(),
 
        geom_upper_tri(ggplot2::aes(fill = {{ upper }})),
 
-       ggplot2::scale_fill_gradientn(upper_name, colors = upper_colors, ...))
+       ggplot2::scale_fill_gradientn(rlang::as_label(upper_name), colors = upper_colors, ...))
 
 }
 
