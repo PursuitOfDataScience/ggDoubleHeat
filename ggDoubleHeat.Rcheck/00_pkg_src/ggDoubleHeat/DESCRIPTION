@@ -16,19 +16,14 @@ Description: A data visualization design that provides comparison between
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyData: true
-Depends:
-    R (>= 3.5.0)
-Imports:
-    rlang,
-    grid,
-    ggplot2 (>= 3.0.0),
-    ggnewscale (>= 0.4.5)
+Depends: R (>= 3.5.0)
+Imports: rlang, grid, ggplot2 (>= 3.0.0), ggnewscale (>= 0.4.5)
 RoxygenNote: 7.3.2
-Suggests: 
-    rmarkdown,
-    knitr,
-    dplyr,
-    scales,
-    tidyr
+Suggests: rmarkdown, knitr, dplyr, scales, tidyr
 URL: https://pursuitofdatascience.github.io/ggDoubleHeat/
 BugReports: https://github.com/PursuitOfDataScience/ggDoubleHeat/issues
+NeedsCompilation: no
+Packaged: 2025-09-12 14:44:16 UTC; youzhi
+Author: Youzhi Yu [aut, cre],
+  Trent Buskirk [aut, ths]
+Maintainer: Youzhi Yu <yuyouzhi666@icloud.com>

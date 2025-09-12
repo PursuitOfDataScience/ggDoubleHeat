@@ -1,0 +1,477 @@
+Hmm ... looks like a package
+Converting parsed Rd's to LaTeX 
+Creating pdf output from LaTeX ...
+
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(./Rd2.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/bk10.clo))
+(/software/R-4.4.1-el8-x86_64/lib64/R/share/texmf/tex/latex/Rd.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/ifthen.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/iftex/iftex.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/longtable.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/bm.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/alltt.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/verbatim.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/url/url.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/textcomp.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amstext.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/fontenc.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/times.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+)) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/color.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-def/pdftex.def
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdftexcmds/pdftexcmds
+.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/infwarerr/infwarerr.s
+ty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/kvdefinekeys/kvdefine
+keys.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdfescape/pdfescape.s
+ty) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hycolor/hycolor.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/letltxmacro/letltxmacro
+.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/nameref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/refcount/refcount.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/gettitlestring/gettit
+lestring.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+))) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/pd1enc.def
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/puenc.def)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bitset/bitset.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bigintcalc/bigintcalc
+.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/rerunfilecheck/rerunfil
+echeck.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/uniquecounter/uniquec
+ounter.sty))))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/l3backend/l3backend-pdf
+tex.def)
+No file Rd2.aux.
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+No file Rd2.toc.
+[1{/software/texlive-2022-el8-x86_64/texmf-var/fonts/map/pdftex/updmap/pdftex.m
+ap}{/software/texlive-2022-el8-x86_64/texmf-dist/fonts/enc/dvips/base/8r.enc}{/
+software/texlive-2022-el8-x86_64/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0
+.enc}] [2] [3] [4] [5] [6] [7] [8]
+No file Rd2.ind.
+[9] (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+urw/times/utmb8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (9 pages, 94376 bytes).
+Transcript written on Rd2.log.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(./Rd2.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/bk10.clo))
+(/software/R-4.4.1-el8-x86_64/lib64/R/share/texmf/tex/latex/Rd.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/ifthen.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/iftex/iftex.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/longtable.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/bm.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/alltt.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/verbatim.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/url/url.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/textcomp.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amstext.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/fontenc.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/times.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+)) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/color.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-def/pdftex.def
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdftexcmds/pdftexcmds
+.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/infwarerr/infwarerr.s
+ty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/kvdefinekeys/kvdefine
+keys.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdfescape/pdfescape.s
+ty) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hycolor/hycolor.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/letltxmacro/letltxmacro
+.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/nameref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/refcount/refcount.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/gettitlestring/gettit
+lestring.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+))) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/pd1enc.def
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/puenc.def)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bitset/bitset.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bigintcalc/bigintcalc
+.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/rerunfilecheck/rerunfil
+echeck.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/uniquecounter/uniquec
+ounter.sty))))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/l3backend/l3backend-pdf
+tex.def) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.toc) [1{/software/texlive-2022
+-el8-x86_64/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/software/texlive-202
+2-el8-x86_64/texmf-dist/fonts/enc/dvips/base/8r.enc}{/software/texlive-2022-el8
+-x86_64/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2] [3] [4]
+[5] [6] [7] [8] [9]
+No file Rd2.ind.
+[10] (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux) )</software/texlive-
+2022-el8-x86_64/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb>
+</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
+</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/urw/times/utmri8a.pfb
+>
+Output written on Rd2.pdf (10 pages, 95881 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.17 [TeX Live 2023] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (14 entries accepted, 0 rejected).
+Sorting entries....done (58 comparisons).
+Generating output file Rd2.ind....done (36 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(./Rd2.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/bk10.clo))
+(/software/R-4.4.1-el8-x86_64/lib64/R/share/texmf/tex/latex/Rd.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/ifthen.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/iftex/iftex.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/longtable.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/bm.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/alltt.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/verbatim.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/url/url.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/textcomp.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amstext.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/fontenc.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/times.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+)) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/color.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-def/pdftex.def
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdftexcmds/pdftexcmds
+.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/infwarerr/infwarerr.s
+ty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/kvdefinekeys/kvdefine
+keys.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdfescape/pdfescape.s
+ty) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hycolor/hycolor.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/letltxmacro/letltxmacro
+.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/nameref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/refcount/refcount.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/gettitlestring/gettit
+lestring.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+))) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/pd1enc.def
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/puenc.def)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bitset/bitset.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bigintcalc/bigintcalc
+.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/rerunfilecheck/rerunfil
+echeck.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/uniquecounter/uniquec
+ounter.sty))))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/l3backend/l3backend-pdf
+tex.def) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.toc) [1{/software/texlive-2022
+-el8-x86_64/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/software/texlive-202
+2-el8-x86_64/texmf-dist/fonts/enc/dvips/base/8r.enc}{/software/texlive-2022-el8
+-x86_64/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2] [3] [4]
+[5] [6] [7] [8] [9] (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.ind
+[10]
+
+LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
+(Font)              using `T1/zi4/m/n' instead on input line 15.
+
+[11]) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+Package rerunfilecheck Warning: File `Rd2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+ )</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (11 pages, 105430 bytes).
+Transcript written on Rd2.log.
+This is makeindex, version 2.17 [TeX Live 2023] (kpathsea + Thai support).
+Scanning input file Rd2.idx....done (14 entries accepted, 0 rejected).
+Sorting entries....done (58 comparisons).
+Generating output file Rd2.ind....done (36 lines written, 0 warnings).
+Output written in Rd2.ind.
+Transcript written in Rd2.ilg.
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-22>
+(./Rd2.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/bk10.clo))
+(/software/R-4.4.1-el8-x86_64/lib64/R/share/texmf/tex/latex/Rd.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/ifthen.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/iftex/iftex.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/longtable.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/bm.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/alltt.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/tools/verbatim.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/url/url.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/textcomp.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amstext.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amsfonts.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/mathrsfs.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/fontenc.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/times.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/zi4.sty
+`inconsolata-zi4' v1.12, 2019/05/17 Text macros for Inconsolata (msharpe)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/xkeyval/keyval.tex)))
+)) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/color.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-cfg/color.cfg)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics-def/pdftex.def
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdftexcmds/pdftexcmds
+.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/infwarerr/infwarerr.s
+ty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/kvdefinekeys/kvdefine
+keys.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/pdfescape/pdfescape.s
+ty) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hycolor/hycolor.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/letltxmacro/letltxmacro
+.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/auxhook/auxhook.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/nameref.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/refcount/refcount.sty)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/gettitlestring/gettit
+lestring.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+))) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/pd1enc.def
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/intcalc/intcalc.sty
+)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/puenc.def)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bitset/bitset.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/bigintcalc/bigintcalc
+.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atbegshi-ltx.sty))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/atveryend-ltx.sty)
+
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/rerunfilecheck/rerunfil
+echeck.sty
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/generic/uniquecounter/uniquec
+ounter.sty))))
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/base/makeidx.sty)
+Writing index file Rd2.idx
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/t1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/l3backend/l3backend-pdf
+tex.def) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/context/base/mkii/supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.out)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/psnfss/ts1ptm.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/inconsolata/t1zi4.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/amsfonts/umsb.fd)
+(/software/texlive-2022-el8-x86_64/texmf-dist/tex/latex/jknapltx/ursfs.fd)
+(/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.toc) [1{/software/texlive-2022
+-el8-x86_64/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/software/texlive-202
+2-el8-x86_64/texmf-dist/fonts/enc/dvips/base/8r.enc}{/software/texlive-2022-el8
+-x86_64/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-0.enc}] [2] [3] [4]
+[5] [6] [7] [8] [9] (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.ind
+[10]
+
+LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
+(Font)              using `T1/zi4/m/n' instead on input line 15.
+
+[11]) (/home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d/Rd2.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )</software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/public/inconsolata/
+Inconsolata-zi4r.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmb8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></software/texlive-2022-el8-x86_64/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on Rd2.pdf (11 pages, 105649 bytes).
+Transcript written on Rd2.log.
+Saving output to ‘ggDoubleHeat-manual.pdf’ ...
+Done
+You may want to clean up by 'rm -Rf /home/youzhi/RtmpYms0u1/Rd2pdf907eb7ea9245d'

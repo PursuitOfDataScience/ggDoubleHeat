@@ -15,9 +15,5 @@
 #' file when trying to understand what each argument means visually.
 #'
 #'
-#' @aliases ggDoubleHeat-package
-#' @docType package
-#' @name ggDoubleHeat
-#'
-
-NULL
+#' @keywords internal
+"_PACKAGE"

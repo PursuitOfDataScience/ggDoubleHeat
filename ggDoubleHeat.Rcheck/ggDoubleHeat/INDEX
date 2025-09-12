@@ -1,0 +1,10 @@
+geom_heat_circle        Heatcircle
+geom_heat_grid          Heatgrid
+geom_heat_tri           Heattriangle
+pitts_emojis            Popular Emojis
+pitts_tg                Pittsburgh COVID-related Google & Twitter
+                        incidence rates
+remove_padding          Remove ggplot2 default padding
+states_tg               States' COVID-related Google & Twitter
+                        incidence rates
+theme_heat              Plot Themes
