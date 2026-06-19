@@ -3,7 +3,7 @@ ggDoubleHeat
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/workflows/R-CMD-check/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions)
+[![R-CMD-check](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/PursuitOfDataScience/ggDoubleHeat/actions/workflows/R-CMD-check.yaml)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/ggDoubleHeat)](https://CRAN.R-project.org/package=ggDoubleHeat)
 [![Lifecycle:
